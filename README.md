@@ -1,6 +1,6 @@
 # example-wdio
 This is a test script for a facebook login scenario using WebDriverIO
-
+https://docs.google.com/spreadsheets/d/1prSErtTcMy0S_ZS4AqYV2aleWybfEyFcqSGunKYgnU0/edit?usp=sharing
 
 git clone https://github.com/shidqiadiatma/example-wdio.git
 
