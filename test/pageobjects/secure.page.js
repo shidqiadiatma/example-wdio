@@ -12,12 +12,8 @@ class SecurePage extends Page {
     get successMessage () {
         return $('/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[3]/div/div/div[1]/div[1]/div/div[1]/div/div/div[1]/span');
     }
-    get alertWrongPass () {
+    get alertMessage () {
         return $('._9ay7');
-    }
-
-    get alertWrongEmail () {
-        return $('._9kq2')
     }
 }
 

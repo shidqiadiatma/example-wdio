@@ -16,15 +16,15 @@ describe('Test Scenario - Login User', () => {
     })
     it('As a user, I want to make sure the login is using the wrong password', async () => {
         await LoginPage.login('hipster@dispostable.com', 'passwordSalah_nich')
-        await expect(SecurePage.alertWrongPass).toBeExisting()
-        await expect(SecurePage.alertWrongPass).toHaveTextContaining(
+        await expect(SecurePage.alertMessage).toBeExisting()
+        await expect(SecurePage.alertMessage).toHaveTextContaining(
             "The password that you've entered is incorrect. ")
     })
     it('As a user, I want to make sure the login uses an unregistered email', async () => {
-        await LoginPage.login('emailsalahnih@dispostable.com', 'passwordBenar1hgdfh23*')
-        await expect(SecurePage.alertWrongEmail).toBeExisting()
-        await expect(SecurePage.alertWrongEmail).toHaveTextContaining(
-            "We couldn't find an account that matches what you entered, but we've found one that closely matches.")
+        await LoginPage.login('emailsalahnih@dispostable.com', 'passwordBenar123*')
+        await expect(SecurePage.alertMessage).toBeExisting()
+        await expect(SecurePage.alertMessage).toHaveTextContaining(
+            "The email address you entered isn't connected to an account. ")
     })
 })
 
